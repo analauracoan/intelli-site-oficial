@@ -28,38 +28,36 @@ export default function Page() {
           <Image src={Ilustracao1} width={"20%"} />
         </div>
       </section>
-      <section className="w-dvw [height:160dvh] bg-primary px-20 flex flex-col justify-between">
-        <div className="w-full h-1/2 flex flex-row justify-around items-start">
-          <Image src={Ilustracao2} width={500} />
-          <div className="w-3/6">
-            <h1 className="text-7xl text-white font-bold text-right my-16">
-              Nossa missão
-            </h1>
-            <p className="text-right text-5xl text-white font-thin">
-              Fornecer soluções de software{" "}
-              <strong className="font-extrabold">personalizadas</strong> que
-              capacitem nossos clientes a alcançar seus objetivos de negócios
-              com <strong className="font-extrabold">eficiência</strong> e{" "}
-              <strong className="font-extrabold">inovação</strong>.
-            </p>
-          </div>
+      <section className="w-dvw h-dvh bg-primary px-20 flex flex-row justify-around">
+        <Image src={Ilustracao2} width={800} />
+        <div className="h-full flex flex-col justify-center">
+          <h1 className="text-7xl text-white font-bold text-right py-16">
+            Nossa missão
+          </h1>
+          <p className="text-right text-4xl text-white font-thin">
+            Fornecer soluções de software{" "}
+            <strong className="font-extrabold">personalizadas</strong> que
+            capacitem nossos clientes a alcançar seus objetivos de negócios com{" "}
+            <strong className="font-extrabold">eficiência</strong> e{" "}
+            <strong className="font-extrabold">inovação</strong>.
+          </p>
         </div>
-        <div className="w-full h-1/2 flex flex-row justify-around items-start">
-          <div className="w-3/6">
-            <h1 className="text-7xl text-white font-bold text-left my-16">
-              Nossa visão
-            </h1>
-            <p className="text-left text-5xl text-white font-thin">
-              Ser reconhecidos por{" "}
-              <strong className="font-bold">
-                transformar desafios tecnológicos
-              </strong>{" "}
-              em oportunidades de{" "}
-              <strong className="font-bold">crescimento</strong>.
-            </p>
-          </div>
-          <Image src={Ilustracao3} width={500} />
+      </section>
+      <section className="w-dvw h-dvh bg-primary px-20 flex flex-row justify-around">
+        <div className="h-full flex flex-col justify-center">
+          <h1 className="text-7xl text-white font-bold text-left my-16">
+            Nossa visão
+          </h1>
+          <p className="text-left text-4xl text-white font-thin">
+            Ser reconhecidos por{" "}
+            <strong className="font-bold">
+              transformar desafios tecnológicos
+            </strong>{" "}
+            em oportunidades de{" "}
+            <strong className="font-bold">crescimento</strong>.
+          </p>
         </div>
+        <Image src={Ilustracao3} width={800} />
       </section>
       <footer id="qr" className="w-dvw bg-background px-20 py-5 flex flex-row">
         <Image src={QRcode} width={200} />
