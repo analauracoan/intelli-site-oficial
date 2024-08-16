@@ -19,7 +19,7 @@ export default function Layout({ children }) {
         />
       </head>
       <body>
-        <main>{children}</main>
+        <main className="w-full h-full">{children}</main>
       </body>
     </html>
   );

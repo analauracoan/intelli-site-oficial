@@ -8,33 +8,36 @@ import QRcode from "../assets/qr_code.png";
 export default function Page() {
   return (
     <>
-      <section className="w-dvw h-dvh bg-background px-20 py-5">
-        <div className="w-full h-1/6 flex flex-row justify-between items-start">
-          <Image src={Logo} width={100} height={100} />
-          <h4 className="font-sans font-medium text-black text-3xl">
+      <section className="w-full h-dvh bg-background px-5 py-2 Laptop:px-10 4K:px-20">
+        <div className="w-full h-1/6 flex flex-row justify-between items-center">
+          <Image src={Logo} className="w-1/4 MobileL:w-1/6 Tablet:w-1/12" />
+          <h4 className="font-sans font-medium text-black text-lg Tablet:text-xl 4K:text-5xl">
             <a href="#qr">Como funciona?</a>
           </h4>
         </div>
-        <div className="w-full h-auto flex flex-row justify-between items-center">
-          <div className="w-fit h-full flex flex-col justify-around">
-            <h1 className="text-6xl	font-bold leading-tight">
+        <div className="w-full h-5/6 flex flex-col justify-around items-center Tablet:flex-row">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-3xl font-bold leading-tight Tablet:text-5xl 4K:text-8xl">
               Softwares do seu jeito criados de forma moderna
             </h1>
-            <p className="text-3xl text-cinza my-5">
+            <p className="text-xl text-cinza my-5 Tablet:text-2xl 4K:text-4xl">
               Os projetos que você sempre planejou virando realidade sem
               estresse
             </p>
           </div>
-          <Image src={Ilustracao1} width={"20%"} />
+          <Image src={Ilustracao1} className="w-3/4 MobileL:w-1/2" />
         </div>
       </section>
-      <section className="w-dvw h-dvh bg-primary px-20 flex flex-row justify-around">
-        <Image src={Ilustracao2} width={800} />
-        <div className="h-full flex flex-col justify-center">
-          <h1 className="text-7xl text-white font-bold text-right py-16">
+      <section className="w-full h-full bg-primary flex flex-col justify-start items-center px-5 Tablet:flex-row Tablet:items-center Laptop:px-10 LaptopL:px-15 LaptopL:justify-around">
+        <Image
+          src={Ilustracao2}
+          className="w-3/4 MobileL:w-1/2 LaptopL:w-1/4"
+        />
+        <div className="flex flex-col justify-around items-center Tablet:w-9/12 Tablet:px-5 Tablet:items-end LaptopL:w-2/4">
+          <h1 className="text-4xl text-white font-bold text-center Tablet:my-5 4K:text-7xl">
             Nossa missão
           </h1>
-          <p className="text-right text-4xl text-white font-thin">
+          <p className="text-center text-xl text-white font-thin Tablet:text-right 4K:text-4xl">
             Fornecer soluções de software{" "}
             <strong className="font-extrabold">personalizadas</strong> que
             capacitem nossos clientes a alcançar seus objetivos de negócios com{" "}
@@ -43,28 +46,33 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <section className="w-dvw h-dvh bg-primary px-20 flex flex-row justify-around">
-        <div className="h-full flex flex-col justify-center">
-          <h1 className="text-7xl text-white font-bold text-left my-16">
+      <section className="w-full h-full bg-primary flex flex-col-reverse justify-start items-center px-5 Tablet:flex-row Tablet:items-center Laptop:px-10 LaptopL:px-15 LaptopL:justify-around">
+        <div className="flex flex-col justify-around items-center py-5 Tablet:w-9/12 Tablet:px-5 Tablet:items-start LaptopL:w-2/4">
+          <h1 className="text-4xl text-white font-bold text-center Tablet:my-5 4K:text-7xl">
             Nossa visão
           </h1>
-          <p className="text-left text-4xl text-white font-thin">
-            Ser reconhecidos por{" "}
-            <strong className="font-bold">
-              transformar desafios tecnológicos
-            </strong>{" "}
-            em oportunidades de{" "}
-            <strong className="font-bold">crescimento</strong>.
+          <p className="text-center text-xl text-white font-thin Tablet:text-left 4K:text-4xl">
+            Ser reconhecidos por transformar{" "}
+            <strong className="font-bold">desafios tecnológicos</strong> em
+            oportunidades de <strong className="font-bold">crescimento</strong>.
           </p>
         </div>
-        <Image src={Ilustracao3} width={800} />
+        <Image
+          src={Ilustracao3}
+          className="w-3/4 MobileL:w-1/2 LaptopL:w-1/4"
+        />
       </section>
-      <footer id="qr" className="w-dvw bg-background px-20 py-5 flex flex-row">
+      <footer
+        id="qr"
+        className="w-full bg-background flex flex-col items-center py-5 Tablet:flex-row Tablet:px-5"
+      >
         <Image src={QRcode} width={200} />
-        <h1 className="m-10 text-4xl">
-          Entre em contato com a Intelli Desenvolvimento! <br />
-          <strong className="font-bold">Você irá se surpreender</strong>
-        </h1>
+        <div className="flex flex-col w-full">
+          <h1 className="m-10 text-xl 4K:text-3xl">
+            Entre em contato com a Intelli Desenvolvimento! <br />
+            <strong className="font-bold">Você irá se surpreender</strong>
+          </h1>
+        </div>
       </footer>
     </>
   );
