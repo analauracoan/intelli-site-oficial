@@ -6,24 +6,17 @@ import Ilustracao1 from "../assets/section_1.png";
 import Ilustracao2 from "../assets/section_2-1.png";
 import Ilustracao3 from "../assets/section_2-2.png";
 import QRcode from "../assets/qr_code.png";
-
-import { useRouter } from "next/navigation";
+import Number1 from "../assets/number_one.png";
+import Number2 from "../assets/number_two.png";
+import Number3 from "../assets/number_three.png";
+import Number4 from "../assets/number_four.png";
 
 export default function Page() {
-  const router = useRouter();
-
   return (
     <>
       <section className="w-full h-dvh bg-background px-5 py-2 Laptop:px-10 4K:px-20">
         <div className="w-full h-1/6 flex flex-row justify-between items-center">
           <Image src={Logo} className="w-1/4 MobileL:w-1/6 Tablet:w-1/12" />
-          <button
-            type="button"
-            onClick={() => router.push("/funcionamento")}
-            className="font-sans font-medium text-black text-lg Tablet:text-xl 4K:text-5xl"
-          >
-            Como funciona?
-          </button>
         </div>
         <div className="w-full h-5/6 flex flex-col justify-around items-center Tablet:flex-row">
           <div className="flex flex-col justify-center">
@@ -72,6 +65,57 @@ export default function Page() {
           className="w-3/4 MobileL:w-1/2 LaptopL:w-1/4"
         />
       </section>
+      <section className="w-full h-dvh bg-background px-5 py-2 Laptop:px-10 4K:px-20">
+        <div className="w-full h-1/6 flex flex-row justify-between items-center">
+          <Image src={Logo} className="w-1/4 MobileL:w-1/6 Tablet:w-1/12" />
+        </div>
+        <div className="w-full h-5/6 flex flex-col justify-around items-center Tablet:flex-row">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-3xl font-bold leading-tight Tablet:text-5xl 4K:text-8xl">
+              Como funciona para eu ter meu site ou sistema?
+            </h1>
+          </div>
+          <Image src={Ilustracao1} className="w-3/4 MobileL:w-1/2" />
+        </div>
+      </section>
+      <section className="w-full [height:200dvh] bg-primary Tablet:flex Tablet:flex-col Tablet:items-center">
+        <h1 className="text-3xl text-white p-5 text-center font-bold leading-tight Tablet:py-16 Tablet:text-5xl 4K:text-8xl">
+          Etapas de Desenvolvimento
+        </h1>
+        <div className="w-full h-1/5 bg-background p-3 flex flex-row items-center mb-8 Tablet:h-1/6 Tablet:rounded-lg Tablet:w-3/4">
+          <Image src={Number1} width={30} className="mr-4 Tablet:mx-8" />
+          <p className="h-full leading-tight text-justify content-center">
+            <strong>PLANEJAMENTO</strong>
+            <br />
+            Entendimento de negócio, montagem de requisitos, design de
+            interfaces e planejamento de projeto.
+          </p>
+        </div>
+        <div className="w-full h-1/5 bg-background p-3 flex flex-row items-center mb-8 MobileL:h-1/6 Tablet:h-1/6 Tablet:rounded-lg Tablet:w-3/4">
+          <Image src={Number2} width={30} className="mr-4 Tablet:mx-8" />
+          <p className="h-full leading-tight text-justify content-center">
+            <strong>DESENVOLVIMENTO</strong>
+            <br />
+            Desenvolvimento Front-End e Back-End.
+          </p>
+        </div>
+        <div className="w-full h-1/5 bg-background p-3 flex flex-row items-center mb-8 MobileL:h-1/6 Tablet:h-1/6 Tablet:rounded-lg Tablet:w-3/4">
+          <Image src={Number3} width={30} className="mr-4 Tablet:mx-8" />
+          <p className="h-full leading-tight text-justify content-center">
+            <strong>TESTE</strong>
+            <br />
+            Execução de testes com o objetivo de encontrar falhas.
+          </p>
+        </div>
+        <div className="w-full h-1/5 bg-background p-3 flex flex-row items-center mb-8 MobileL:h-1/6 Tablet:h-1/6 Tablet:rounded-lg Tablet:w-3/4">
+          <Image src={Number4} width={30} className="mr-4 Tablet:mx-8" />
+          <p className="h-full leading-tight text-justify content-center">
+            <strong>IMPLEMENTAÇÃO</strong>
+            <br />
+            Deploy e entrega do produto.
+          </p>
+        </div>
+      </section>
       <footer
         id="qr"
         className="w-full bg-background flex flex-col items-center py-5 Tablet:flex-row Tablet:px-5"
@@ -79,8 +123,9 @@ export default function Page() {
         <Image src={QRcode} width={200} />
         <div className="flex flex-col w-full">
           <h1 className="m-10 text-xl 4K:text-3xl">
-            Entre em contato com a Intelli Desenvolvimento! <br />
-            <strong className="font-bold">Você irá se surpreender</strong>
+            Entre em contato com a Intelli Desenvolvimento escaneando o QRcode
+            ou pelo número: (48) 99197-5338. <br />
+            <strong className="font-bold">Você irá se surpreender.</strong>
           </h1>
         </div>
       </footer>
